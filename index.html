@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="hd"><h1>True vs Fake Random</h1></div>
+    <div class="core">
+    <h2>Have you ever wondered how cards are shuffled on online gambling sites?</h2>
+    <p>
+      I wondered this as well, and so as an intelligent individual, I googled it. My research led me to an algorithm for random permutation of elements, called the Fisher-Yates Algorithm. 
+    </p>
+    </div>
+    <div class="core">
+    <h2>The algorithm works like this:</h2>
+    <p>
+      Let's say you have a deck of 5 cards. You spread those 5 cards out, left to right, where the left most card is the top of the deck, and the right most card is the bottom card. Then you take the left most card, and swap it with a random card from the pile you have. So lets say you choose the middle card. Now you have the middle card on the left and the top card of the deck at the center. Then you keep moving right and performing this same swap on random cards to the right of the card being swapped, till you get to the last card. Then you put everything back, left to right is top to bottom. Now you have a shuffled deck. 
+    </p>
+    </div>
+    <div class="core">
+    <h2>But how does a computer do that?</h2>
+    <p>
+       Well it's pretty straight forward, it follows those same steps, but a key difference is the way a random card is choosen. 
+    </p>
+    </div>
+    <div class="core">
+    <h2>How does a computer come up with a random card?</h2>
+    <p>
+      Well it's a bit tricky. A computer has to use a Random Number Generator, in order to create a random number. This Random Number Generator takes some random variable, such as the temperature in Seattle's tech district on a Tuesday afternoon, and fiddles around with the number. Thus you'll have a random number. 
+    </p>
+    </div>
+    <div class="core">
+    <h2>But is it really random?</h2>
+    <p>
+      Well, not really. Mathmatically, a truly random distribution means that every possibility has a equal chance of occuring, so if you have 4 possible outcomes, each has a 25% chance of occuring. That's not exactly how it works with RNG. It's very hard to have a seed, and an RNG algorithm that will create such a distribution. 
+    </p>
+    <p>
+      Notice though, that this means that the Random Number Generator, isn't truly Random. Actually, that is called a Pseudo Random Number Generator. Engineers have created hardware that generates random numbers that "could" be considered truly random, called TRNG, but because it's at the mercy of the environment the hardware is in, the level of randomness can be skewed. 
+    </p>
+    <p>
+      For example, if a piece of hardware can produce a random number based on certain sounds, that people can't hear, then those sounds could be considered random,the distribution of those numbers could become less random as a truck with a huge FM/AM radio passes by.
+    </p>
+    </div>
+    <div class="core">
+    <h2>In Closing</h2>
+    <p>
+      Unless you can observe something truly random, that is consistent and cannot be skewed easily, TRUE random cannot be produced easily on a computer. This could even mean that online gambling, could be a scam.
+    </p>
+    </div>
+  </body>
+</html>
